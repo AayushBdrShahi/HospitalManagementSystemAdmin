@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const DoctorContext = createContext()
 
-const DoctorContextProvider =(props)=>{
+export const DoctorContextProvider =(props)=>{
 
     // to save the doctor authentication token
     const  backendUrl = import.meta.env.VITE_BACKEND_URL
@@ -25,4 +25,3 @@ const DoctorContextProvider =(props)=>{
     )
 }
 
-export default DoctorContextProvider

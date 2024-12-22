@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const AdminContext = createContext()
 
-const AdminContextProvider =(props)=>{
+export const AdminContextProvider =(props)=>{
 
     const [aToken, setAToken] = useState(localStorage.getItem('aToken')?localStorage.getItem('aToken'):'');
 
@@ -24,4 +24,3 @@ const AdminContextProvider =(props)=>{
     )
 }
 
-export default AdminContextProvider
